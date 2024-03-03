@@ -18,3 +18,6 @@ function createParagraph() {
   for (const button of buttons) {
     button.addEventListener("click", createParagraph);
   }
+  document.querySelector("html").addEventListener("click", function () {
+    alert("Ouch! Stop poking me!");
+  });
