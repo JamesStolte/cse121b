@@ -21,9 +21,9 @@ const displayTemples = (temples) => {
 
 /* async getTemples Function using fetch()*/
 const getTemples = async () => {
-  const response = await fetch("https://byui-cse.github.io/cse121b-ww-course/resources/temples.json"); // Let's get the temple data
-  templeList = await response.json(); // Convert the response to JSON and store it in our templeList
-  displayTemples(templeList); // Let's display those temples!
+  const response = await fetch("https://byui-cse.github.io/cse121b-ww-course/resources/temples.json"); 
+  templeList = await response.json(); 
+  displayTemples(templeList); 
 }
 
 
