@@ -1,63 +1,80 @@
 /* Declare and initialize global variables */
-const templesElement = document.getElementById("temples");
-let templeList = [];
+const groceriesElement = document.getElementById("groceries");
+let groceryList = [];
+let activeList = [];
 
-/* async displayTemples Function */
-const displayTemples = (temples) => {
-    temples.forEach(temple => {
+/* async displayGrocery Function */
+const displayGroceries = (groceries) => {
+    groceries.forEach(grocery => {
         const art = document.createElement("article");
         const h3 = document.createElement("h3");
-        h3.textContent = temple.templeName;
-        const tempImg = document.createElement("img");
-        tempImg.src = temple.imageUrl;
-        tempImg.alt = temple.location;
+        h3.textContent = grocery.Name;
+        const itemImg = document.createElement("img");
+        itemImg.src = grocery.Path;
+        itemImg.alt = grocery.Name;
         const button = document.createElement("button");
-        button.textContent = "Add to list";
+        button.id = grocery.Name;
+        button.textContent = `Add ${grocery.Name} to list`;
         art.appendChild(h3);    
-        art.appendChild(tempImg);
-        art.appendChild(button)
-        templesElement.appendChild(art);
+        art.appendChild(itemImg);
+        art.appendChild(button);
+        groceriesElement.appendChild(art);
     });
 };
 
-/* async getTemples Function using fetch()*/
-const getTemples = async () => {
-  const response = await fetch("https://byui-cse.github.io/cse121b-ww-course/resources/temples.json"); 
-  templeList = await response.json(); 
-  displayTemples(templeList); 
+/* async getGroceries Function using fetch()*/
+const getGroceries = async () => {
+  const response = await fetch("https://run.mocky.io/v3/f491fce0-0462-4f3f-a167-ac66fdf9ed12"); 
+  groceryList = await response.json(); 
+  displayGroceries(groceryList); 
 }
 
+function addItemToArray(name, price) {
+  activeList.push({ name: name, price: price });
+}
+
+function handleButtonClick(groceries) {
+  let name = groceries.filter(grocery => grocery.Name)
+  addItemToArray(name, price);
+  console.log("Item added to array:", activeList);
+}
 
 /* reset Function */
 const reset = () => {
-    templesElement.innerHTML = "";
+    groceriesElement.innerHTML = "";
   }
-  
 
-/* filterTemples Function */
-const filterTemples = (temples) => {
+  /* filterGroceries Function */
+const filterGroceries = (groceries) => {
     reset();
-    console.log(temples);
+    console.log(groceries);
     const filter = document.getElementById("filtered").value;
     console.log(filter);
     switch (filter) {
-      case "utah":
-        displayTemples(temples.filter(temple => temple.location.includes("Utah"))); 
+      case "produce":
+        displayGroceries(groceries.filter(grocery => grocery.Type.includes("produce"))); 
         break;
-      case "notutah":
-        displayTemples(temples.filter(temple => !temple.location.includes("Utah"))); 
+      case "food":
+        displayGroceries(groceries.filter(grocery => grocery.Type.includes("food")));
+        break
+      case "cheap":
+        displayGroceries(groceries.filter(grocery => parseFloat(grocery.Price) < 3));
         break;
-      case "older":
-        displayTemples(temples.filter(temple => new Date(temple.dedicated) < new Date(1950, 0, 1)));
+      case "other":
+        displayGroceries(groceries.filter(grocery => grocery.Type.includes("other")));
         break;
       case "all":
       default:
-        displayTemples(temples);
+        displayGroceries(groceries);
     }
 }
-
   
 /* Event Listener */
-document.querySelector("#filtered").addEventListener("change", () => { filterTemples(templeList) });
-  
-getTemples();
+document.querySelector("#filtered").addEventListener("change", () => {filterGroceries(groceryList)});
+
+
+
+getGroceries();
+
+var apple = document.getElementById("apple");
+apple.addEventListener("click", () => handleButtonClick(groceryList));

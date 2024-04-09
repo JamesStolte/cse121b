@@ -1,0 +1,23 @@
+[
+    {"Type": "produce", "Price": 2.50, "Name": "Apple", "Path": "https://purepng.com/public/uploads/large/purepng.com-fresh-applefoodsweettastyhealthyfruitappleleaf-981524677946vfurf.png"},
+    {"Type": "produce", "Price": 1.20, "Name": "Carrot", "Path": "https://ucarecdn.com/459eb7be-115a-4d85-b1d8-deaabc94c643/-/format/auto/-/preview/3000x3000/-/quality/lighter/"},
+    {"Type": "food", "Price": 3.00, "Name": "Milk", "Path": "https://www.oregondairy.com/wp-content/uploads/2016/05/Milk.jpg"},
+    {"Type": "Grain", "Price": 2.75, "Name": "Bread", "Path": "https://upload.wikimedia.org/wikipedia/commons/3/33/Fresh_made_bread_05.jpg"},
+    {"Type": "food", "Price": 5.50, "Name": "Chicken", "Path": "https://www.simplyrecipes.com/thmb/Sw2rWO2l615LjOnmUyDIWjAMDKg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2007__04__honey-glazed-roast-chicken-horiz-a-1800-2057270028084ff2bdb54fcb0f2d3227.jpg"},
+    {"Type": "food", "Price": 8.75, "Name": "Salmon", "Path": "https://images.everydayhealth.com/images/recipes/How-to-Cook-Salmon-1440x810.jpg"},
+    {"Type": "food", "Price": 1.50, "Name": "Chips", "Path": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Potato-Chips.jpg/1200px-Potato-Chips.jpg"},
+    {"Type": "other", "Price": 4.25, "Name": "Soda", "Path": "https://www.the-sun.com/wp-content/uploads/sites/6/2023/05/photo-illustration-empty-coca-cola-820128012.jpg?strip=all&w=960"},
+    {"Type": "other", "Price": 2.00, "Name": "Ketchup", "Path": "https://hips.hearstapps.com/hmg-prod/images/does-ketchup-need-to-be-refrigerated-64e521e586d3c.jpg?resize=980:*"},
+    {"Type": "other", "Price": 1.75, "Name": "Salt", "Path": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/streams/2014/May/140501/2D274905752907-surprising-uses-for-salt.jpg"},
+    {"Type": "food", "Price": 3.50, "Name": "Ice Cream", "Path": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/homemade-ice-cream-recipe.jpg"},
+    {"Type": "food", "Price": 1.80, "Name": "Soup", "Path": "https://sugarspunrun.com/wp-content/uploads/2021/09/Tomato-Soup-Recipe-1-of-1.jpg"},
+    {"Type": "food", "Price": 2.25, "Name": "Baguette", "Path": "https://theloopywhisk.com/wp-content/uploads/2023/05/Gluten-Free-Baguettes_1200px-featured-500x500.jpg"},
+    {"Type": "other", "Price": 4.00, "Name": "Chocolate", "Path": "https://shapegrams.com/wp-content/uploads/2021/12/Chocolate-Bar-Featured-Image.png"},
+    {"Type": "food", "Price": 2.80, "Name": "Spaghetti", "Path": "https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/VZZJ5PUPPQI6ZDO5KIJWTCGSMM.jpg"},
+    {"Type": "food", "Price": 3.25, "Name": "Cereal", "Path": "https://hips.hearstapps.com/hmg-prod/images/766/articles/2016/08/healthy-cereals-1492706881.jpg?crop=0.636xw:1xh;center,top&resize=1200:*"},
+    {"Type": "food", "Price": 3.75, "Name": "Cake", "Path": "https://bakingamoment.com/wp-content/uploads/2023/07/IMG_2051-ice-cream-cake.jpg"},
+    {"Type": "food", "Price": 6.00, "Name": "Cheddar", "Path": "https://store.pagelsponderosa.com/wp-content/uploads/2020/08/Mild-Cheddar-Block-resized.jpg"},
+    {"Type": "other", "Price": 5.25, "Name": "Olive Oil", "Path": "https://rizoscurls.com/cdn/shop/articles/rizoscurlsoliveoil.png?v=1618003199&width=1200"},
+    {"Type": "food", "Price": 2.50, "Name": "Pasta Sauce", "Path": "https://cookfasteatwell.com/wp-content/uploads/2019/02/Easy-Pasta-Sauce_Quick-Recipe-500x500.jpg"},
+    {"Type": "food", "Price": 7.50, "Name": "Almonds", "Path": "https://t4.ftcdn.net/jpg/05/39/90/47/360_F_539904765_dBZDmm8q4PCNJ3slDzSllXc6TANioL1X.jpg"}
+  ]
